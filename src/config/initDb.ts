@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-const initDb = async (): Promise<void> => {
+export const initDb = async (): Promise<void> => {
   const client = await pool.connect();
 
   try {
