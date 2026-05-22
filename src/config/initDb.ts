@@ -7,7 +7,7 @@ export const initDb = async (): Promise<void> => {
   const client = await pool.connect();
 
   try {
-    console.log('🚀 Initializing database...');
+    console.log('Initializing database...');
 
     // Create users table
     await client.query(`
@@ -22,7 +22,7 @@ export const initDb = async (): Promise<void> => {
         updated_at  TIMESTAMPTZ         NOT NULL DEFAULT NOW()
       );
     `);
-    console.log('✅ users table ready');
+    console.log(' users table ready');
 
     // Create issues table
     await client.query(`
@@ -39,11 +39,11 @@ export const initDb = async (): Promise<void> => {
         updated_at   TIMESTAMPTZ         NOT NULL DEFAULT NOW()
       );
     `);
-    console.log('✅ issues table ready');
+    console.log(' issues table ready');
 
-    console.log('🎉 Database initialization complete!');
+    console.log(' Database initialization complete!');
   } catch (err) {
-    console.error('❌ Database initialization failed:', err);
+    console.error(' Database initialization failed:', err);
     throw err;
   } finally {
     client.release();

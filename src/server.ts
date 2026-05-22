@@ -7,14 +7,14 @@ const startServer = async (): Promise<void> => {
   try {
     // Test database connection on startup
     await pool.query('SELECT 1');
-    console.log('✅ Database connection verified');
+    console.log(' Database connection verified');
 
     app.listen(PORT, () => {
-      console.log(`🚀 DevPulse server running on port ${PORT}`);
-      console.log(`📡 Health check: http://localhost:${PORT}/health`);
+      console.log(` DevPulse server running on port ${PORT}`);
+      console.log(`Health check: http://localhost:${PORT}/health`);
     });
   } catch (err) {
-    console.error('❌ Failed to start server:', err);
+    console.error(' Failed to start server:', err);
     process.exit(1);
   }
 };

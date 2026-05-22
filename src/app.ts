@@ -17,8 +17,8 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// ─── Health Check ──────────────────────────────────────────────────────────────
-app.get('/health', (_req: Request, res: Response) => {
+// ───  Check ──────────────────────────────────────────────────────────────
+app.get('/', (_req: Request, res: Response) => {
   res.status(StatusCodes.OK).json({ success: true, message: 'DevPulse API is running 🚀' });
 });
 
