@@ -2,8 +2,8 @@
 
 > A collaborative platform for software teams to report bugs, suggest features, and coordinate resolutions.
 
-**Live URL:** `https://devpulse-api.vercel.app`  
-**GitHub:** `https://github.com/yourusername/devpulse`
+**Live URL:** `[https://devpulse-api.vercel.app](https://devpulse-weld.vercel.app/)`  
+**GitHub:** `[https://github.com/yourusername/devpulse](https://github.com/robinahmed12/dev-pulse)`
 
 ---
 
@@ -34,7 +34,7 @@
 
 ### 1. Clone & install
 ```bash
-git clone https://github.com/yourusername/devpulse.git
+git clone[ https://github.com/yourusername/devpulse.git](https://github.com/robinahmed12/dev-pulse.git)](https://github.com/robinahmed12/dev-pulse.git)
 cd devpulse
 npm install
 ```
@@ -47,7 +47,7 @@ cp .env.example .env
 
 ### 3. Initialize database
 ```bash
-npm run db:init
+npm run dev
 ```
 
 ### 4. Start development server
